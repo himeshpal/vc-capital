@@ -3,6 +3,7 @@ const domains = [
   "Fintech",
   "HealthTech",
   "EdTech",
+  "Agriculture",
   "Clean Energy",
   "Ecommerce",
   "Cybersecurity",

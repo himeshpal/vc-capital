@@ -48,6 +48,24 @@ const startupsData = {
         "Gamified learning solutions for K-12 and higher education, enhancing student engagement and retention.",
     },
   ],
+  agriculture: [
+    {
+      name: "AgroTech",
+      description: "Cutting-edge technology for modern farming solutions.",
+    },
+    {
+      name: "FarmFresh",
+      description: "Organic farming techniques for healthier produce.",
+    },
+    {
+      name: "CropGuard",
+      description: "Innovative pest control and crop protection methods.",
+    },
+    {
+      name: "SoilSense",
+      description: "Smart soil management for improved crop yields.",
+    },
+  ],
   cleanEnergy: [
     {
       name: "GreenPower",
