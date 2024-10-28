@@ -286,9 +286,10 @@ const InvestorRegistration = () => {
               ) : (
                 <button
                   type="submit"
+                  x
                   className="flex items-center px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg ml-auto transition duration-300"
                 >
-                  Submit Registration
+                  <a href="/login">Submit Registration</a>
                 </button>
               )}
             </div>
