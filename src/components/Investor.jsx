@@ -81,15 +81,39 @@ const InvestorRegistration = () => {
                 required
               />
             </div>
-            <input
-              type="text"
-              name="role"
-              placeholder="Your Role"
-              className="pl-10 py-3 bg-white/10 border border-white/30 text-white placeholder-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-purple-500"
-              value={formData.role}
-              onChange={handleInputChange}
-              required
-            />
+            <div className="relative">
+              <Briefcase
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-300"
+                size={20}
+              />
+              <select
+                name="role"
+                className="pl-10 py-3 bg-white/10 border border-white/30 text-white placeholder-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-purple-500"
+                value={formData.role}
+                onChange={handleInputChange}
+                required
+              >
+                <option className="text-black" value="">
+                  Select Your Role
+                </option>
+                <option className="text-black" value="HNI">
+                  HNI
+                </option>
+                <option className="text-black" value="Venture Capitalist">
+                  Venture Capitalist
+                </option>
+                <option className="text-black" value="Seed Accelerator">
+                  Seed Accelerator
+                </option>
+                <option className="text-black" value="Angel Investor">
+                  Angel Investor
+                </option>
+                <option className="text-black" value="Institutional Investor">
+                  Institutional Investor
+                </option>
+                {/* Add more options as needed */}
+              </select>
+            </div>
           </div>
         );
       case 2:
@@ -105,11 +129,21 @@ const InvestorRegistration = () => {
               onChange={handleInputChange}
               required
             >
-              <option value="">Select Investment Focus</option>
-              <option value="seed">Seed Stage</option>
-              <option value="early">Early Stage</option>
-              <option value="growth">Growth Stage</option>
-              <option value="late">Late Stage</option>
+              <option className="text-black" value="">
+                Select Investment Focus
+              </option>
+              <option className="text-black" value="seed">
+                Seed Stage
+              </option>
+              <option className="text-black" value="early">
+                Early Stage
+              </option>
+              <option className="text-black" value="growth">
+                Growth Stage
+              </option>
+              <option className="text-black" value="late">
+                Late Stage
+              </option>
             </select>
             <div className="relative">
               <DollarSign
@@ -123,11 +157,21 @@ const InvestorRegistration = () => {
                 onChange={handleInputChange}
                 required
               >
-                <option value="">Typical Investment Range</option>
-                <option value="0-100k">$0 - $100K</option>
-                <option value="100k-500k">$100K - $500K</option>
-                <option value="500k-1m">$500K - $1M</option>
-                <option value="1m+">$1M+</option>
+                <option className="text-black" value="">
+                  Typical Investment Range
+                </option>
+                <option className="text-black" value="0-100k">
+                  $0 - $100K
+                </option>
+                <option className="text-black" value="100k-500k">
+                  $100K - $500K
+                </option>
+                <option className="text-black" value="500k-1m">
+                  $500K - $1M
+                </option>
+                <option className="text-black" value="1m+">
+                  $1M+
+                </option>
               </select>
             </div>
             <div className="relative">

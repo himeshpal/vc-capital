@@ -4,15 +4,22 @@ import { Rocket, TrendingUp } from "lucide-react";
 
 const MainRegistration = () => {
   return (
-    <div className="min-h-screen bg-purple-700 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-600 to-purple-700 flex items-center justify-center p-4">
       <div className="w-full max-w-4xl bg-white/20 backdrop-blur-md rounded-xl shadow-2xl p-8 border border-white/30">
         <div className="w-full text-center">
-          <h1 className="text-4xl font-bold text-white mb-6">
-            Welcome to VC capital
-          </h1>
-          <p className="text-white/90 text-lg mb-12">
-            Choose your path to begin the journey
-          </p>
+          <div className="flex flex-col md:flex-row md:space-x-16 items-center md:items-start mb-6">
+            <div className="mb-4 md:mb-0 md:pl-10">
+              <img className="w-32 rounded-2xl" src="./src/assets/logo.jpg" />
+            </div>
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl font-bold text-white mb-6">
+                Welcome to VC Capital
+              </h1>
+              <p className="text-white/90 text-lg">
+                Choose your path to begin the journey
+              </p>
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Startup Card */}
@@ -86,7 +93,7 @@ const MainRegistration = () => {
             Already registered?{" "}
             <a
               href="/login"
-              className="text-purple-300 hover:text-purple-200 underline"
+              className="text-purple-950 hover:text-purple-700 underline"
             >
               Sign in
             </a>

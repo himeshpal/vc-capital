@@ -8,6 +8,43 @@ import {
   ArrowLeft,
 } from "lucide-react";
 
+const domains = [
+  "AI",
+  "Fintech",
+  "HealthTech",
+  "EdTech",
+  "Agriculture",
+  "Clean Energy",
+  "Ecommerce",
+  "Cybersecurity",
+  "Blockchain",
+  "Web 3",
+  "IoT",
+  "Telemedicine",
+  "Gaming",
+  "Digital Marketing",
+  "Logistics",
+  "Virtual Reality",
+  "Augmented Reality",
+  "Robotics",
+  "Smart Cities",
+  "Big Data",
+  "Cloud Computing",
+  "InsurTech",
+  "Supply Chain Management",
+  "Biotechnology",
+  "Food Tech",
+  "Wearable Technology",
+  "Real Estate Tech",
+  "Travel Tech",
+  "Social Media",
+  "Entertainment Tech",
+  "HR Tech",
+  "MarTech",
+  "PropTech",
+  "Telecom",
+];
+
 const StartupRegistration = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -74,16 +111,24 @@ const StartupRegistration = () => {
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-300"
                 size={20}
               />
-              <input
-                type="text"
+              <select
                 name="industry"
-                placeholder="Industry"
                 className="pl-10 py-3 bg-white/10 border border-white/30 text-white placeholder-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-purple-500"
                 value={formData.industry}
                 onChange={handleInputChange}
                 required
-              />
+              >
+                <option className="text-black" value="">
+                  Select Industry
+                </option>
+                {domains.map((domain, index) => (
+                  <option className="text-black" value={domain} key={index}>
+                    {domain}
+                  </option>
+                ))}
+              </select>
             </div>
+
             <input
               type="date"
               name="foundingDate"
