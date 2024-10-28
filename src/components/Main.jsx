@@ -9,7 +9,10 @@ const MainRegistration = () => {
         <div className="w-full text-center">
           <div className="flex flex-col md:flex-row md:space-x-16 items-center md:items-start mb-6">
             <div className="mb-4 md:mb-0 md:pl-10">
-              <img className="w-32 rounded-2xl" src="./src/assets/logo.jpg" />
+              <img
+                className="w-32 rounded-2xl"
+                src="https://res.cloudinary.com/dtrxc3hwu/image/upload/v1730119992/logo_vjmlzi.jpg"
+              />
             </div>
             <div className="text-center md:text-left">
               <h1 className="text-4xl font-bold text-white mb-6">
